@@ -91,3 +91,9 @@ Puerto Rico
 ### Dashboard Details
 
 ![SOC Dashboard Details](screenshots/dashboard-details.png)
+## Network Traffic Analysis
+
+Sysmon Event ID 3 – Network Connection monitoring.
+
+![Network Traffic Analysis](network-traffic-analysis.png)
+
