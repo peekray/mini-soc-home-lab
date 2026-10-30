@@ -96,4 +96,4 @@ Puerto Rico
 
 Sysmon Event ID 3 – Network Connection monitoring.
 
-![Network Traffic Analysis](network-traffic-analysis.png)
+![Network Traffic Analysis](screenshots/network-traffic-analysis.png)
