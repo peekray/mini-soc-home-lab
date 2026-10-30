@@ -82,3 +82,10 @@ In Progress — Additional detection rules, investigations, and documentation wi
 Raymond Ramirez Torres  
 Aspiring SOC Analyst Tier 1  
 Puerto Rico
+## SOC Monitoring Dashboard
+
+### Dashboard Overview
+![SOC Dashboard Overview](screenshots/dashboard-overview.png)
+
+### Dashboard Details
+![SOC Dashboard Details](screenshots/dashboard-details.png)
