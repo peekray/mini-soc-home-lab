@@ -75,30 +75,23 @@ Destination port: 53/UDP
 
 The shared destination and port are consistent with DNS resolution activity.
 
+
+
 ### HTTPS / QUIC Traffic
 
-Several applications generated traffic over port 443.
+Several applications generated network traffic over destination port 443.
 
 Examples included:
 
 - Spotify
 - Google Chrome
 
-These connections are consistent with encrypted web traffic. The destination IP alone does not establish whether a connection is malicious.
+Depending on the transport protocol, port 443 traffic may represent HTTPS over TCP or QUIC over UDP.
 
-### Local Network Discovery
+The destination IP and port alone are insufficient to determine whether a connection is malicious.
 
-Additional traffic was observed:
 
-- UDP 5355 – LLMNR
-- UDP 5353 – mDNS
-- UDP 1900 – SSDP
 
-These protocols can support local name resolution and device discovery.
-
-## 6. Splunk Queries
-
-### Network Connection Monitoring
 
 ```spl
 index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
@@ -138,7 +131,14 @@ No confirmed malicious network connection was identified during this investigati
 
 This assessment is limited to the Sysmon events collected and analyzed. Further investigation would be required to establish the reputation and ownership of destination IP addresses or confirm the domains resolved through DNS.
 
-## 8. Skills Demonstrated
+## 8. Investigation Limitations
+
+- Sysmon Event ID 3 provides connection metadata, not the full network payload.
+- DNS domain names were not available because no corresponding Sysmon Event ID 22 events were found in the analyzed data.
+- Destination IP ownership and reputation were not independently verified.
+- The investigation reflects only the events collected during the selected time period.
+
+## 9. Skills Demonstrated
 
 - Network Traffic Analysis
 - SIEM Monitoring
@@ -150,6 +150,6 @@ This assessment is limited to the Sysmon events collected and analyzed. Further 
 - False Positive Assessment
 - SOC Tier 1 Documentation
 
-## 9. Conclusion
+## 10. Conclusion
 
 This investigation demonstrated how a SOC Analyst Tier 1 can use Sysmon and Splunk to monitor network connections, identify communication patterns, and distinguish expected application activity from events requiring further investigation.
