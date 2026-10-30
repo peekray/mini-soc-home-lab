@@ -83,10 +83,11 @@ Raymond Ramirez Torres
 Aspiring SOC Analyst Tier 1  
 Puerto Rico
 ## SOC Monitoring Dashboard
-## SOC Monitoring Dashboard
 
 ### Dashboard Overview
+
 ![SOC Dashboard](screenshots/dashboard-overview.png)
 
 ### Dashboard Details
-![SOC Dashboard Details](screenshots/dashboard-overview%202.png)
+
+![SOC Dashboard Details](screenshots/dashboard-details.png)
