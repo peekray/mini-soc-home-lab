@@ -77,6 +77,7 @@ The dashboard includes:
 ### Incident Reports
 - [Hone - Encoded PowerShell Investigation](incident-reports/incident-reports/SOC-Tier1-Hone-EncodedCommand.md)
 - [Network Traffic Analysis](incident-reports/network-traffic-analysis.md)
+- - [Process Creation Investigation](incident-reports/process-creation-investigation.md)
 
 ### Splunk Detection Queries
 - [Network Monitoring](splunk-queries/network-monitoring.md)
