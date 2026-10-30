@@ -97,3 +97,14 @@ Puerto Rico
 Sysmon Event ID 3 – Network Connection monitoring.
 
 ![Network Traffic Analysis](screenshots/network-traffic-analysis.png)
+## Detection Validation
+
+The following detection searches were successfully tested in Splunk:
+
+- Sysmon Event ID 1 - Process Creation.
+- Sysmon Event ID 3 - Network Connections.
+- Sysmon Event ID 5 - Process Termination.
+- PowerShell Process Monitoring.
+- Encoded PowerShell Command Detection.
+
+All five searches returned matching events during laboratory testing.
