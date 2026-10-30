@@ -72,7 +72,22 @@ The dashboard includes:
 - Network monitoring
 - Alert triage
 - Incident documentation
+## Project Documentation
 
+### Incident Reports
+- [Hone - Encoded PowerShell Investigation](incident-reports/SOC-Tier1-Hone-EncodedCommand.md)
+- [Network Traffic Analysis](incident-reports/network-traffic-analysis.md)
+
+### Splunk Detection Queries
+- [Network Monitoring](splunk-queries/network-monitoring.md)
+- [PowerShell Detection](splunk-queries/powershell-detection.md)
+- [Process Monitoring](splunk-queries/process-monitoring.md)
+- [Suspicious Activity Detection](splunk-queries/suspicious-activity.md)
+
+### Screenshots
+- [Dashboard Overview](screenshots/dashboard-overview.png)
+- [Dashboard Details](screenshots/dashboard-details.png)
+- [Network Traffic Analysis](screenshots/network-traffic-analysis.png)
 ## Project Status
 
 In Progress — Additional detection rules, investigations, and documentation will be added.
