@@ -58,18 +58,24 @@ Reviewed and decoded the EncodedCommand parameter to understand the actual comma
 
 Evaluated the decoded command to identify potentially suspicious actions and determine whether additional investigation was necessary.
 
+
 ### 6. Findings
 
-- PowerShell execution containing an EncodedCommand parameter was investigated.
-- Process relationships were reviewed.
-- The encoded command was decoded for analysis.
-- Findings were evaluated in the context of the available lab evidence.
+- PowerShell execution containing an EncodedCommand parameter was identified.
+- The process tree showed PowerShell launched through cmd.exe, with Hone.exe as the parent application.
+- The Base64 command was decoded and reviewed.
+- The decoded commands queried Windows system information, including operating system details and connected input devices.
+- No confirmed malicious behavior was identified in the decoded commands examined.
 
 ### 7. Incident Classification
 
-**Preliminary Classification:** Suspicious PowerShell Activity - Further Validation Required.
+**Preliminary Classification:** Likely Benign - Further Validation Required.
 
-The presence of an encoded PowerShell command alone does not confirm malicious activity. Additional context, including the complete command, process ancestry, user activity, and related network events, is necessary for a definitive classification.
+The observed PowerShell activity was associated with the Hone Windows optimization application. The decoded commands examined appeared to collect system and device information.
+
+The use of EncodedCommand and ExecutionPolicy Bypass can be suspicious indicators, but they do not independently establish malicious activity.
+
+The investigation did not establish a confirmed security incident. Additional review of related events would be necessary to validate the complete execution context.
 
 ### 8. Recommendations
 
