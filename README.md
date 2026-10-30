@@ -83,6 +83,7 @@ The dashboard includes:
 - [PowerShell Detection](splunk-queries/powershell-detection.md)
 - [Process Monitoring](splunk-queries/process-monitoring.md)
 - [Suspicious Activity Detection](splunk-queries/suspicious-activity.md)
+- - [SOC Detection Rules](splunk-queries/detection-rules.md)
 
 ### Screenshots
 - [Dashboard Overview](screenshots/dashboard-overview.png)
